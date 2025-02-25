@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+    color: #fff;
+}
+
+header {
+    background: rgba(251, 227, 255, 0.1);
+    border: 1px solid #978899;
+}
+
+.normal-btn {
+    position: relative;
+    overflow: hidden;
+}
+.normal-btn button{
+    overflow: hidden;
+    clip-path: polygon(6% 0, 80% 0%, 100% 0, 100% 86%, 95% 100%, 20% 100%, 0 100%, 0 14%);
+}
+/* 
+.normal-btn::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -7px;
+    background-color: #5d3a53;
+    width: 10px;
+    height: 20px;
+    transform: skewX(-35deg);   
+}
+
+.normal-btn::after {
+    content: "";
+    background-color: #512f47;
+    position: absolute;
+    bottom: -3px;
+    right: -7px;
+    width: 10px;
+    height: 20px;
+    transform: skewX(-35deg);   
+} */
+
+.active {
+    color: #d107fb;
+    font-weight: 600;
+    border-bottom: 2px solid transparent; /* Initial transparent border */
+    border-image: linear-gradient(to right, transparent, white, transparent) 0.5; /* Gradient for the border */
+}
+
+.hero{
+    background-image: url('./assets/bg/hom-bg.png');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
