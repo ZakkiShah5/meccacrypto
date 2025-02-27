@@ -1,43 +1,17 @@
 body {
-    background-color: black;
+    background-color: #000;
     color: #fff;
 }
+
 
 header {
     background: rgba(251, 227, 255, 0.1);
     border: 1px solid #978899;
 }
 
-.normal-btn {
-    position: relative;
-    overflow: hidden;
-}
 .normal-btn button{
-    overflow: hidden;
     clip-path: polygon(6% 0, 80% 0%, 100% 0, 100% 86%, 95% 100%, 20% 100%, 0 100%, 0 14%);
 }
-/* 
-.normal-btn::before {
-    content: "";
-    position: absolute;
-    top: -3px;
-    left: -7px;
-    background-color: #5d3a53;
-    width: 10px;
-    height: 20px;
-    transform: skewX(-35deg);   
-}
-
-.normal-btn::after {
-    content: "";
-    background-color: #512f47;
-    position: absolute;
-    bottom: -3px;
-    right: -7px;
-    width: 10px;
-    height: 20px;
-    transform: skewX(-35deg);   
-} */
 
 .active {
     color: #d107fb;
@@ -47,8 +21,61 @@ header {
 }
 
 .hero{
-    background-image: url('./assets/bg/hom-bg.png');
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 50%), 
+    url('./assets/bg/hom-bg.png') no-repeat center center/cover;
     height: 100vh;
     background-position: center;
     background-size: cover;
+}
+
+.box-1{
+    background-image: url('./assets/borderbox.png');
+    height: 625px;
+    /* background-position: center; */
+    background-size: cover;
+    width: 500px;
+    padding-left:  50px;
+    padding-right:  50px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    backdrop-filter: blur(2px);
+}
+
+.stage-btns button{
+    clip-path: polygon(6% 0, 80% 0%, 100% 0, 100% 86%, 95% 100%, 20% 100%, 0 100%, 0 14%);
+}
+
+.normal-btn2 button{
+    clip-path: polygon(2.7% 0%, 100% 0%, 100% 15%, 99.9% 90.8%, 97.5% 100%, 0% 100%, 0% 85%, 0% 10%);
+}
+
+.fee-sec{
+    min-height: 120vh;
+    background-image: url('./assets/bg/bg-box.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.516); 
+    background-blend-mode: multiply;
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        height: 90vh;
+    }
+    .box-1{
+        background-image: url('./assets/borderboxmob.png');
+        /* background-position: center; */
+        background-size: cover;
+        height: 660px;
+        background-repeat: no-repeat;
+        width: 340px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        backdrop-filter: blur(2px);
+    }
+    .fee-sec{
+        background-image: none;
+    }
 }
